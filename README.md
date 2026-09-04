@@ -1,4 +1,5 @@
 🛠️ Tecnologias e Ferramentas Utilizadas:
+
 Linguagem: Java (Desenvolvimento nativo orientado a objetos para regras de negócio e controle de fluxo).
 
 Interface Gráfica (UI): XML (Linguagem de marcação para estruturação de layouts, telas, cartões e componentes visuais responsivos).
