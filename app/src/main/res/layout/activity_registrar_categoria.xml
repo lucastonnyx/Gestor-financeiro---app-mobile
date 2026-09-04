@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FAFAFA">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nova Categoria"
+        android:textColor="#000033"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp" />
+
+    <EditText
+        android:id="@+id/editNomeCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Nome (Ex: Salário, Mercado)"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        android:inputType="textCapWords"
+        android:background="#FFFFFF"
+        android:paddingHorizontal="16dp"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnSalvarCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Salvar Categoria"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:backgroundTint="#000033" />
+
+</LinearLayout>

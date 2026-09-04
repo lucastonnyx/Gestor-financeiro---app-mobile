@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="48dp"
+    android:fitsSystemWindows="true"
+    android:background="#FAFAFA">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nova Dívida/Devedor"
+        android:textColor="#000033"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"
+        android:layout_marginHorizontal="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupTipoDivida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp"
+        android:layout_marginHorizontal="8dp">
+
+        <RadioButton
+            android:id="@+id/radioDevo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eu Devo"
+            android:textColor="#000000"
+            android:layout_marginEnd="16dp"/>
+
+        <RadioButton
+            android:id="@+id/radioMeDevem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Me Devem"/>
+    </RadioGroup>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp"
+        app:strokeColor="#CCCCCC"
+        app:strokeWidth="1dp">
+
+        <EditText
+            android:id="@+id/editValorDivida"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:hint="Valor (R$)"
+            android:inputType="numberDecimal"
+            android:paddingHorizontal="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#757575" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp"
+        app:strokeColor="#CCCCCC"
+        app:strokeWidth="1dp">
+
+        <EditText
+            android:id="@+id/editDescricaoDivida"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:hint="Descrição"
+            android:inputType="textCapSentences"
+            android:paddingHorizontal="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#757575" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Categoria"
+        android:textColor="#000033"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"
+        android:layout_marginHorizontal="8dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp"
+        app:strokeColor="#CCCCCC"
+        app:strokeWidth="1dp">
+
+        <Spinner
+            android:id="@+id/spinnerCategoriaDivida"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingHorizontal="8dp"
+            android:popupBackground="#FFFFFF" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/btnSalvarDivida"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Salvar"
+        android:backgroundTint="#000033"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        app:cornerRadius="12dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Minhas Dívidas (O que eu devo)"
+        android:textColor="#990000"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="8dp"/>
+
+    <ListView
+        android:id="@+id/listaMinhasDividas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Devedores (O que me devem)"
+        android:textColor="#006600"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="8dp"/>
+
+    <ListView
+        android:id="@+id/listaDevedores"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"/>
+
+</LinearLayout>
